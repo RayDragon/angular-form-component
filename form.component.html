@@ -1,0 +1,12 @@
+<form>
+    <div *ngFor="let element of form.elements">
+        <div *ngIf="element.type=='input'">
+            <div class="input-group">
+                <input class="form-control" type="{{ element.input_type}}">
+                <div class="input-group-append">
+                    <span class="input-group-text">Description</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
